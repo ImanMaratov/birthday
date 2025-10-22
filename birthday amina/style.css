@@ -1,232 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Manrope:wght@200..800&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 * {
 	box-sizing: border-box;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 }
+
 body {
 	font-family: 'Roboto Slab', serif;
+	background-color: bisque;
+	display: flex;
+	justify-content: center;
 }
+
 .container {
 	width: 700px;
-	height: 3200px;
 	background-color: bisque;
-}
-.imglar {
 	position: relative;
 }
+
 .imglar img {
 	width: 100%;
-	position: absolute;
-	top: 0;
+	display: block;
 	filter: brightness(70%);
 }
+
+/* ==== Вертикальный текст ==== */
 .bir {
 	position: relative;
 }
 .bir span {
+	position: absolute;
 	font-weight: bold;
 	font-size: 70px;
 	color: #000;
-	z-index: 2;
 	text-align: center;
-	position: absolute;
 	top: 540px;
-	white-space: nowrap;
 	left: 320px;
-	rotate: 90deg;
+	transform: rotate(90deg);
+	transform-origin: center;
+	white-space: nowrap;
+	z-index: 10;
 }
+
+/* ==== Поздравление ==== */
 .pozdrav {
+	text-align: center;
+	padding: 40px 20px;
 	position: relative;
 }
+
 .pozdrav h1 {
-	position: absolute;
-	left: 210px;
-	top: 1080px;
+	margin-bottom: 20px;
 }
+
 .pozdrav p {
-	text-align: center;
-	position: absolute;
-	top: 1190px;
-	left: 70px;
 	color: rgb(0, 0, 0);
 	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 40px;
 }
-.star1 img {
-	width: 25px;
-	position: absolute;
-	left: 220px;
-}
-.star2 img {
-	width: 25px;
-	position: absolute;
-	left: 250px;
-}
-.star3 img {
-	width: 25px;
-	position: absolute;
-	left: 280px;
-}
-.star11 {
-	position: absolute;
-	top: 1450px;
-	left: 82px;
-} /* kalendar */
+
+/* ==== Украшения ==== */
 .kalendar img {
 	width: 80%;
-	position: absolute;
-	left: 67px;
-	top: 1560px;
-} /* saat */
-.saat img {
-	width: 50px;
-	position: absolute;
-	top: -15px;
+	display: block;
+	margin: 0 auto 40px;
 }
-.saat {
-	position: absolute;
-	top: 2450px;
-	left: 319px;
+
+.star11,
+.star12,
+.star13 {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 20px 0;
 }
-.saat h5 {
-	position: absolute;
-	top: 60px;
-	left: 2px;
-}
-.saat h2 {
-	position: absolute;
-	top: 100px;
-} /* - */
-.star22 img {
+
+.star11 img,
+.star12 img,
+.star13 img {
 	width: 25px;
-	position: absolute;
-	left: 220px;
 }
-.star33 img {
-	width: 25px;
-	position: absolute;
-	left: 250px;
-}
-.star44 img {
-	width: 25px;
-	position: absolute;
-	left: 280px;
-}
-.star12 {
-	position: absolute;
-	top: 2300px;
-	left: 82px;
-} /* */
-.geolokasia {
-	position: absolute;
-	top: 2670px;
-	left: 319px;
-}
-.geolokasia img {
-	width: 50px;
-}
-.geolokasia h5 {
-	position: absolute;
-	top: 73px;
-}
-.geolokasia span {
-	position: absolute;
-	left: -66px;
-	top: 120px;
-	white-space: nowrap;
-	font-weight: 400;
-	font-size: 24px;
-}
+
+/* ==== Блоки времени, места, дресс-кода ==== */
+.saat,
+.geolokasia,
 .dressCode {
+	text-align: center;
+	margin-bottom: 50px;
 	position: relative;
-	left: 320px;
-	top: 2950px;
 }
+
+.saat img,
+.geolokasia img,
 .dressCode img {
 	width: 50px;
-	position: absolute;
+	margin-bottom: 10px;
 }
+
+.saat h5,
+.geolokasia h5,
 .dressCode h5 {
-	position: absolute;
-	top: 70px;
-	left: -15px;
+	margin: 5px 0;
+	font-size: 18px;
+}
+
+.saat h2 {
+	font-size: 28px;
+}
+
+.geolokasia span,
+.dressCode span {
+	display: block;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.dressCode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.dressCode img {
+	width: 60px;
 }
 .dressCode span {
-	position: absolute;
-	left: -38px;
-	top: 120px;
-	font-weight: 400;
-	font-size: 24px;
-} /* - */
-.star13 {
-	position: absolute;
-	top: 3160px;
-	left: 85px;
-}
-.star221 img {
-	width: 25px;
-	position: absolute;
-	left: 220px;
-}
-.star331 img {
-	width: 25px;
-	position: absolute;
-	left: 250px;
-}
-.star441 img {
-	width: 25px;
-	position: absolute;
-	left: 280px;
-}
-/* fff */
-
-/* ------------------ Адаптивка для телефонов ------------------ */
-@media (max-width: 460px) {
-  .container {
-    width: 100%;
-    max-width: 700px; /* сохраняем ширину для больших блоков */
-    height: auto;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Центрируем все блоки без изменения абсолютных позиций */
-  .bir span {
-    left: 50% !important;
-    top: 540px !important;
-    transform: translateX(-50%) rotate(90deg);
-  }
-
-  .pozdrav h1 {
-    left: 50% !important;
-    transform: translateX(-50%);
-  }
-
-  .pozdrav p {
-    left: 50% !important;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-
-  .saat, .geolokasia, .dressCode {
-    left: 50% !important;
-    transform: translateX(-50%);
-  }
-
-  .geolokasia span, .dressCode span {
-    white-space: normal;
-    text-align: center;
-    left: 50% !important;
-    transform: translateX(-50%);
-  }
-
-  .kalendar, .star11, .star12, .star13 {
-    left: 50% !important;
-    transform: translateX(-50%);
-  }
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 8px;
 }
 
+/* 📱 Адаптация под планшеты */
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.bir span {
+		font-size: 48px;
+		top: 260px;
+		left: 50%;
+		transform: translateX(-50%) rotate(90deg);
+	}
+
+	.pozdrav h1 {
+		font-size: 28px;
+	}
+
+	.pozdrav p {
+		font-size: 16px;
+	}
+
+	.kalendar img {
+		width: 100%;
+	}
+
+	.star11 img,
+	.star12 img,
+	.star13 img {
+		width: 18px;
+	}
+
+	.saat h2 {
+		font-size: 24px;
+	}
+
+	.geolokasia span,
+	.dressCode span {
+		font-size: 18px;
+	}
+
+	.saat img,
+	.geolokasia img,
+	.dressCode img {
+		width: 40px;
+	}
+}
+
+/* 📱 Адаптация под iPhone 13–16 */
+@media (max-width: 430px) {
+	.bir span {
+		font-size: 36px;
+		top: 220px;
+		left: 80%;
+		transform: translateX(-50%) rotate(90deg);
+	}
+
+	.pozdrav h1 {
+		font-size: 24px;
+	}
+
+	.pozdrav p {
+		font-size: 15px;
+	}
+
+	.saat h2 {
+		font-size: 20px;
+	}
+
+	.geolokasia span,
+	.dressCode span {
+		font-size: 16px;
+	}
+}
