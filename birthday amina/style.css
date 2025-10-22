@@ -231,127 +231,124 @@ img:hover {
 	filter: brightness(1.05);
 } /* ======= АДАПТИВ ДЛЯ iPHONE 13 PRO MAX И ДРУГИХ ======= */
 @media (max-width: 430px) {
-  body {
-    overflow-x: hidden;
-    background-color: bisque;
-  }
+	body {
+		overflow-x: hidden;
+		background-color: bisque;
+	}
 
-  .container {
-    width: 100%;
-    height: auto;
-    padding: 20px 0 60px 0;
-  }
+	.container {
+		width: 100%;
+		height: auto;
+		padding: 20px 0 50px 0;
+	}
 
-  /* ===== ЗАГОЛОВОК ===== */
-  .bir h1 {
-    font-size: 42px;
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-    left: 0;
-    animation: glowText 2.5s ease-in-out infinite alternate;
-  }
+	.bir h1 {
+		font-size: 40px;
+		left: 0;
+		top: 30px;
+		text-align: center;
+		width: 100%;
+	}
 
-  /* ===== КАРТИНКА ===== */
-  .imglar img {
-    position: relative;
-    width: 100%;
-    top: 0;
-    border-radius: 12px;
-    margin-top: 20px;
-  }
+	.imglar img {
+		position: relative;
+		top: 0;
+		width: 100%;
+		border-radius: 10px;
+	}
 
-  /* ===== ПОЗДРАВЛЕНИЕ ===== */
-  .pozdrav h1 {
-    position: relative;
-    font-size: 28px;
-    text-align: center;
-    margin-top: 40px;
-    color: #8b0a82;
-  }
+	.pozdrav h1 {
+		position: relative;
+		left: 0;
+		top: 20px;
+		font-size: 28px;
+		text-align: center;
+		margin-top: 40px;
+	}
 
-  .pozdrav p {
-    position: relative;
-    margin-top: 20px;
-    font-size: 18px;
-    color: rgb(123, 8, 106);
-    text-align: center;
-    padding: 0 25px;
-    line-height: 1.6;
-  }
+	.pozdrav p {
+		position: relative;
+		top: 30px;
+		left: 0;
+		font-size: 18px;
+		color: rgb(123, 8, 106);
+		padding: 0 20px;
+		text-align: center;
+	}
 
-  /* ===== ЗВЁЗДЫ ===== */
-  .star11, .star12, .star13 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 50px;
-  }
+	/* --- ЗВЁЗДЫ --- */
+	.star11,
+	.star12,
+	.star13 {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		gap: 12px;
+		margin-top: 40px;
+		left: 0;
+		top: 0;
+	}
+	.star11 img,
+	.star12 img,
+	.star13 img {
+		position: static;
+		width: 25px;
+	}
 
-  .star11 img, .star12 img, .star13 img {
-    width: 25px;
-    position: static;
-    animation: floatStars 3s infinite ease-in-out;
-  }
+	/* --- КАЛЕНДАРЬ --- */
+	.kalendar img {
+		position: relative;
+		width: 90%;
+		display: block;
+		margin: 30px auto;
+		border-radius: 10px;
+	}
 
-  /* ===== КАЛЕНДАРЬ ===== */
-  .kalendar img {
-    position: relative;
-    display: block;
-    width: 90%;
-    margin: 40px auto;
-    border-radius: 12px;
-    transition: transform 0.4s ease, filter 0.4s ease;
-  }
+	/* --- ВРЕМЯ, МЕСТО, ДРЕСС-КОД --- */
+	.saat,
+	.geolokasia,
+	.dressCode {
+		position: relative;
+		left: 0;
+		top: 0;
+		margin-top: 40px;
+		text-align: center;
+	}
 
-  /* ===== БЛОКИ: ВРЕМЯ / МЕСТО / ДРЕСС-КОД ===== */
-  .saat, .geolokasia, .dressCode {
-    position: relative;
-    text-align: center;
-    margin-top: 50px;
-    left: 0;
-    top: 0;
-    transition: all 0.3s ease-in-out;
-  }
+	.saat img,
+	.geolokasia img,
+	.dressCode img {
+		position: relative;
+		width: 60px;
+		margin-bottom: 10px;
+	}
 
-  .saat img,
-  .geolokasia img,
-  .dressCode img {
-    width: 65px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-  }
+	.saat h5,
+	.geolokasia h5,
+	.dressCode h5 {
+		position: relative;
+		top: 0;
+		left: 0;
+		font-size: 16px;
+	}
 
-  .saat img:hover,
-  .geolokasia img:hover,
-  .dressCode img:hover {
-    transform: scale(1.1);
-  }
+	.saat h2,
+	.geolokasia span,
+	.dressCode span {
+		position: relative;
+		top: 0;
+		left: 0;
+		font-size: 22px;
+		font-weight: 500;
+		display: block;
+		margin-top: 10px;
+	}
 
-  .saat h5,
-  .geolokasia h5,
-  .dressCode h5 {
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-  }
+	.geolokasia span {
+		white-space: normal;
+	}
 
-  .saat h2,
-  .geolokasia span,
-  .dressCode span {
-    display: block;
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 10px;
-  }
-
-  .geolokasia span {
-    white-space: normal;
-  }
-
-  .dressCode {
-    margin-bottom: 70px;
-  }
+	.dressCode {
+		margin-bottom: 60px;
+	}
 }
