@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Manrope:wght@200..800&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+body {
+	font-family: 'Roboto Slab', serif;
+}
+.container {
+	width: 700px;
+	height: 3200px;
+	background-color: bisque;
+}
+.imglar {
+	position: relative;
+}
+.imglar img {
+	width: 100%;
+	position: absolute;
+	top: 190px;
+	filter: brightness(70%);
+}
+
+.bir {
+	position: relative;
+}
+.bir h1 {
+	font-weight: bold;
+	font-size: 70px;
+	color: #000;
+	z-index: 2;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 99px;
+}
+.bir p {
+	z-index: 3;
+	color: #f5f5f5;
+	position: absolute;
+	left: 259px;
+	top: 200px;
+}
+.pozdrav {
+	position: relative;
+}
+.pozdrav h1 {
+	position: absolute;
+	left: 210px;
+	top: 1230px;
+}
+.pozdrav p {
+	text-align: center;
+	position: absolute;
+	top: 1300px;
+	left: 70px;
+	color: rgb(123, 8, 106);
+	font-size: 20px;
+}
+.star1 img {
+	width: 25px;
+	position: absolute;
+	left: 220px;
+}
+
+.star2 img {
+	width: 25px;
+	position: absolute;
+	left: 250px;
+}
+.star3 img {
+	width: 25px;
+	position: absolute;
+	left: 280px;
+}
+
+.star11 {
+	position: absolute;
+	top: 1520px;
+	left: 82px;
+}
+/* kalendar */
+.kalendar img {
+	width: 80%;
+	position: absolute;
+	left: 67px;
+	top: 1610px;
+}
+/* saat */
+.saat img {
+	width: 50px;
+	position: absolute;
+	top: -15px;
+}
+.saat {
+	position: absolute;
+	top: 2450px;
+	left: 319px;
+}
+.saat h5 {
+	position: absolute;
+	top: 60px;
+	left: 2px;
+}
+.saat h2 {
+	position: absolute;
+	top: 100px;
+}
+/* - */
+.star22 img {
+	width: 25px;
+	position: absolute;
+	left: 220px;
+}
+
+.star33 img {
+	width: 25px;
+	position: absolute;
+	left: 250px;
+}
+.star44 img {
+	width: 25px;
+	position: absolute;
+	left: 280px;
+}
+
+.star12 {
+	position: absolute;
+	top: 2350px;
+	left: 82px;
+}
+/*  */
+.geolokasia {
+	position: absolute;
+	top: 2700px;
+	left: 319px;
+}
+.geolokasia img {
+	width: 50px;
+}
+.geolokasia h5 {
+	position: absolute;
+	top: 73px;
+}
+
+.geolokasia span {
+	position: absolute;
+	left: -73px;
+	top: 120px;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 24px;
+}
+.dressCode {
+	position: relative;
+	left: 320px;
+	top: 2950px;
+}
+.dressCode img {
+	width: 50px;
+	position: absolute;
+}
+
+.dressCode h5 {
+	position: absolute;
+	top: 70px;
+	left: -15px;
+}
+.dressCode span {
+	position: absolute;
+	left: -38px;
+	top: 120px;
+	font-weight: 400;
+	font-size: 24px;
+}
+/* - */
+
+.star13 {
+	position: absolute;
+	top: 3160px;
+	left: 85px;
+}
+
+.star221 img {
+	width: 25px;
+	position: absolute;
+	left: 220px;
+}
+
+.star331 img {
+	width: 25px;
+	position: absolute;
+	left: 250px;
+}
+.star441 img {
+	width: 25px;
+	position: absolute;
+	left: 280px;
+}
+
+/* --------- */
+
+/* ======= ЛЕГКАЯ АНИМАЦИЯ ======= */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes floatStars {
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-10px) rotate(10deg);
+	}
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+}
+
+.bir h1,
+.bir p,
+.pozdrav h1,
+.pozdrav p {
+	animation: fadeInUp 1.2s ease-in-out;
+}
+
+.star1 img,
+.star2 img,
+.star3 img,
+.star22 img,
+.star33 img,
+.star44 img,
+.star221 img,
+.star331 img,
+.star441 img {
+	animation: floatStars 3s infinite ease-in-out;
+}
+
+/* ======= ДЕКОРАТИВНЫЙ ЭФФЕКТ НА ТЕКСТ ======= */
+.bir h1 {
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+.pozdrav h1 {
+	color: #8b0a82;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.pozdrav p {
+	line-height: 1.6;
+}
+
+/* ======= МЯГКИЕ ПЕРЕХОДЫ ДЛЯ КАРТИНОК ======= */
+img {
+	transition: transform 0.4s ease, filter 0.4s ease;
+}
+img:hover {
+	transform: scale(1.03);
+	filter: brightness(1.05);
+}
+
+/* ======= АДАПТИВ ДЛЯ iPHONE 13 PRO MAX И ДРУГИХ ======= */
+@media (max-width: 430px) {
+	body {
+		overflow-x: hidden;
+		background-color: bisque;
+	}
+
+	.container {
+		width: 100%;
+		height: auto;
+		padding: 20px 0 50px 0;
+	}
+
+	.bir h1 {
+		font-size: 40px;
+		left: 0;
+		top: 30px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.bir p {
+		left: 0;
+		top: 120px;
+		text-align: center;
+		width: 100%;
+		color: #111;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	.imglar img {
+		position: relative;
+		top: 0;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.pozdrav h1 {
+		position: relative;
+		left: 0;
+		top: 20px;
+		font-size: 28px;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.pozdrav p {
+		position: relative;
+		top: 30px;
+		left: 0;
+		font-size: 18px;
+		color: rgb(123, 8, 106);
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.star11,
+	.star12,
+	.star13 {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 40px;
+	}
+
+	.kalendar img {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 90%;
+		display: block;
+		margin: 30px auto;
+		border-radius: 10px;
+	}
+
+	.saat,
+	.geolokasia,
+	.dressCode {
+		position: relative;
+		left: 0;
+		top: 0;
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.saat img,
+	.geolokasia img,
+	.dressCode img {
+		position: relative;
+		width: 60px;
+		margin-bottom: 10px;
+	}
+
+	.saat h2,
+	.geolokasia span,
+	.dressCode span {
+		position: relative;
+		top: 0;
+		left: 0;
+		font-size: 22px;
+		font-weight: 500;
+		display: block;
+		margin-top: 10px;
+	}
+
+	.geolokasia span {
+		white-space: normal;
+	}
+
+	.dressCode {
+		margin-bottom: 60px;
+	}
+}
+
+/*  */
+/* ======= НЕЖНОЕ СИЯНИЕ ЗАГОЛОВКА ======= */
+@keyframes glowText {
+	0% {
+		text-shadow: 0 0 5px #ff8ad6, 0 0 10px #ff8ad6, 0 0 20px #ff8ad6;
+	}
+	50% {
+		text-shadow: 0 0 10px #ff59c2, 0 0 25px #ff59c2, 0 0 40px #ff59c2;
+	}
+	100% {
+		text-shadow: 0 0 5px #ff8ad6, 0 0 10px #ff8ad6, 0 0 20px #ff8ad6;
+	}
+}
+
+.bir h1 {
+	animation: glowText 2.5s ease-in-out infinite alternate;
+}
