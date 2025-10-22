@@ -184,7 +184,7 @@ body {
 @media (max-width: 430px) {
 	.bir span {
 		font-size: 36px;
-		top: 220px;
+		top: 290px;
 		left: 80%;
 		transform: translateX(-50%) rotate(90deg);
 	}
