@@ -179,33 +179,54 @@ body {
 }
 /* fff */
 
-/* ------------------ Адаптивность для телефонов ------------------ */
-
 /* ------------------ Адаптивка для телефонов ------------------ */
-
-/* Минимальная адаптация для iPhone XR до iPhone 16 Pro */
 @media (max-width: 460px) {
-	.container {
-		width: 100%;
-		height: auto;
-		overflow-x: hidden;
-	}
+  .container {
+    width: 100%;
+    max-width: 700px; /* сохраняем ширину для больших блоков */
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+  }
 
-	img {
-		max-width: 100%;
-		height: auto;
-	}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-	.bir span,
-	.pozdrav h1,
-	.pozdrav p,
-	.saat,
-	.geolokasia,
-	.dressCode,
-	.kalendar,
-	.star11,
-	.star12,
-	.star13 {
-		max-width: 100%;
-	}
+  /* Центрируем все блоки без изменения абсолютных позиций */
+  .bir span {
+    left: 50% !important;
+    top: 540px !important;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .pozdrav h1 {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .pozdrav p {
+    left: 50% !important;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .saat, .geolokasia, .dressCode {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .geolokasia span, .dressCode span {
+    white-space: normal;
+    text-align: center;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .kalendar, .star11, .star12, .star13 {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
 }
+
