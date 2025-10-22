@@ -248,6 +248,7 @@ img:hover {
 		top: 30px;
 		text-align: center;
 		width: 100%;
+		animation: glowText 2.5 ease in-out infinite alternate;
 	}
 
 	.imglar img {
