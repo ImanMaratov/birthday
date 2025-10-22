@@ -181,133 +181,31 @@ body {
 
 /* ------------------ Адаптивность для телефонов ------------------ */
 
-/* iPhone XR, 11, 12 Mini, 13 Mini (~375-414px) */
-@media (max-width: 414px) {
+/* ------------------ Адаптивка для телефонов ------------------ */
+
+/* Минимальная адаптация для iPhone XR до iPhone 16 Pro */
+@media (max-width: 460px) {
 	.container {
 		width: 100%;
 		height: auto;
+		overflow-x: hidden;
 	}
 
-	.bir span {
-		font-size: 40px;
-		left: 50%;
-		top: 250px;
-		transform: translateX(-50%) rotate(90deg);
+	img {
+		max-width: 100%;
+		height: auto;
 	}
 
-	.pozdrav h1 {
-		left: 50%;
-		top: 600px;
-		transform: translateX(-50%);
-		font-size: 28px;
-	}
-
-	.pozdrav p {
-		left: 10px;
-		right: 10px;
-		top: 680px;
-		font-size: 16px;
-	}
-
-	.kalendar img {
-		width: 90%;
-		left: 5%;
-		top: 900px;
-	}
-
-	.saat {
-		left: 50%;
-		top: 1500px;
-		transform: translateX(-50%);
-	}
-	.saat h5 {
-		top: 60px;
-		font-size: 14px;
-	}
-	.saat h2 {
-		top: 100px;
-		font-size: 20px;
-	}
-
-	.geolokasia {
-		left: 50%;
-		top: 1650px;
-		transform: translateX(-50%);
-	}
-	.geolokasia span {
-		left: 0;
-		top: 100px;
-		font-size: 16px;
-		white-space: normal;
-		text-align: center;
-	}
-
-	.dressCode {
-		left: 50%;
-		top: 1800px;
-		transform: translateX(-50%);
-	}
-	.dressCode span {
-		font-size: 16px;
-		left: 0;
-		top: 100px;
-		white-space: normal;
-		text-align: center;
-	}
-}
-
-/* iPhone 12, 13, 14, 15, 16 Pro (~390-430px) */
-@media (max-width: 430px) {
-	.bir span {
-		font-size: 45px;
-		top: 270px;
-	}
-	.pozdrav h1 {
-		font-size: 30px;
-		top: 650px;
-	}
-	.pozdrav p {
-		font-size: 17px;
-		top: 720px;
-	}
-	.kalendar img {
-		top: 950px;
-	}
-	.saat {
-		top: 1550px;
-	}
-	.geolokasia {
-		top: 1700px;
-	}
-	.dressCode {
-		top: 1850px;
-	}
-}
-
-/* iPhone 14 Pro Max, 15 Pro Max, 16 Pro Max (~430-460px) */
-@media (max-width: 460px) {
-	.bir span {
-		font-size: 50px;
-		top: 300px;
-	}
-	.pozdrav h1 {
-		font-size: 32px;
-		top: 700px;
-	}
-	.pozdrav p {
-		font-size: 18px;
-		top: 770px;
-	}
-	.kalendar img {
-		top: 1000px;
-	}
-	.saat {
-		top: 1600px;
-	}
-	.geolokasia {
-		top: 1750px;
-	}
-	.dressCode {
-		top: 1900px;
+	.bir span,
+	.pozdrav h1,
+	.pozdrav p,
+	.saat,
+	.geolokasia,
+	.dressCode,
+	.kalendar,
+	.star11,
+	.star12,
+	.star13 {
+		max-width: 100%;
 	}
 }
