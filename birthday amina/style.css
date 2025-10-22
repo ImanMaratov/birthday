@@ -250,7 +250,9 @@ img:hover {
 		top: 30px;
 		text-align: center;
 		width: 100%;
-		rotate: 50deg;
+		white-space: nowrap;
+		left: 320px;
+		rotate: 90deg;
 	}
 
 	.imglar img {
