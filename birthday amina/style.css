@@ -235,11 +235,13 @@ img:hover {
 		overflow-x: hidden;
 		background-color: bisque;
 	}
+
 	.container {
 		width: 100%;
 		height: auto;
 		padding: 20px 0 50px 0;
 	}
+
 	.bir h1 {
 		font-size: 40px;
 		left: 0;
@@ -247,21 +249,14 @@ img:hover {
 		text-align: center;
 		width: 100%;
 	}
-	.bir p {
-		left: 0;
-		top: 120px;
-		text-align: center;
-		width: 100%;
-		color: #111;
-		font-weight: 600;
-		font-size: 18px;
-	}
+
 	.imglar img {
 		position: relative;
 		top: 0;
 		width: 100%;
 		border-radius: 10px;
 	}
+
 	.pozdrav h1 {
 		position: relative;
 		left: 0;
@@ -270,6 +265,7 @@ img:hover {
 		text-align: center;
 		margin-top: 40px;
 	}
+
 	.pozdrav p {
 		position: relative;
 		top: 30px;
@@ -279,26 +275,36 @@ img:hover {
 		padding: 0 20px;
 		text-align: center;
 	}
+
+	/* --- ЗВЁЗДЫ --- */
 	.star11,
 	.star12,
 	.star13 {
 		position: relative;
-		top: 0;
-		left: 0;
 		display: flex;
 		justify-content: center;
-		gap: 15px;
+		gap: 12px;
 		margin-top: 40px;
+		left: 0;
+		top: 0;
 	}
+	.star11 img,
+	.star12 img,
+	.star13 img {
+		position: static;
+		width: 25px;
+	}
+
+	/* --- КАЛЕНДАРЬ --- */
 	.kalendar img {
 		position: relative;
-		top: 0;
-		left: 0;
 		width: 90%;
 		display: block;
 		margin: 30px auto;
 		border-radius: 10px;
 	}
+
+	/* --- ВРЕМЯ, МЕСТО, ДРЕСС-КОД --- */
 	.saat,
 	.geolokasia,
 	.dressCode {
@@ -308,6 +314,7 @@ img:hover {
 		margin-top: 40px;
 		text-align: center;
 	}
+
 	.saat img,
 	.geolokasia img,
 	.dressCode img {
@@ -315,6 +322,16 @@ img:hover {
 		width: 60px;
 		margin-bottom: 10px;
 	}
+
+	.saat h5,
+	.geolokasia h5,
+	.dressCode h5 {
+		position: relative;
+		top: 0;
+		left: 0;
+		font-size: 16px;
+	}
+
 	.saat h2,
 	.geolokasia span,
 	.dressCode span {
@@ -326,24 +343,12 @@ img:hover {
 		display: block;
 		margin-top: 10px;
 	}
+
 	.geolokasia span {
 		white-space: normal;
 	}
+
 	.dressCode {
 		margin-bottom: 60px;
 	}
-} /* */ /* ======= НЕЖНОЕ СИЯНИЕ ЗАГОЛОВКА ======= */
-@keyframes glowText {
-	0% {
-		text-shadow: 0 0 5px #ff8ad6, 0 0 10px #ff8ad6, 0 0 20px #ff8ad6;
-	}
-	50% {
-		text-shadow: 0 0 10px #ff59c2, 0 0 25px #ff59c2, 0 0 40px #ff59c2;
-	}
-	100% {
-		text-shadow: 0 0 5px #ff8ad6, 0 0 10px #ff8ad6, 0 0 20px #ff8ad6;
-	}
-}
-.bir h1 {
-	animation: glowText 2.5s ease-in-out infinite alternate;
 }
