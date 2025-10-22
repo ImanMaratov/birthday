@@ -20,7 +20,6 @@ body {
 	top: 190px;
 	filter: brightness(70%);
 }
-
 .bir {
 	position: relative;
 }
@@ -34,7 +33,6 @@ body {
 	top: 0;
 	left: 99px;
 }
-
 .pozdrav {
 	position: relative;
 }
@@ -56,7 +54,6 @@ body {
 	position: absolute;
 	left: 220px;
 }
-
 .star2 img {
 	width: 25px;
 	position: absolute;
@@ -67,20 +64,17 @@ body {
 	position: absolute;
 	left: 280px;
 }
-
 .star11 {
 	position: absolute;
 	top: 1520px;
 	left: 82px;
-}
-/* kalendar */
+} /* kalendar */
 .kalendar img {
 	width: 80%;
 	position: absolute;
 	left: 67px;
 	top: 1610px;
-}
-/* saat */
+} /* saat */
 .saat img {
 	width: 50px;
 	position: absolute;
@@ -99,14 +93,12 @@ body {
 .saat h2 {
 	position: absolute;
 	top: 100px;
-}
-/* - */
+} /* - */
 .star22 img {
 	width: 25px;
 	position: absolute;
 	left: 220px;
 }
-
 .star33 img {
 	width: 25px;
 	position: absolute;
@@ -117,13 +109,11 @@ body {
 	position: absolute;
 	left: 280px;
 }
-
 .star12 {
 	position: absolute;
 	top: 2350px;
 	left: 82px;
-}
-/*  */
+} /* */
 .geolokasia {
 	position: absolute;
 	top: 2700px;
@@ -136,7 +126,6 @@ body {
 	position: absolute;
 	top: 73px;
 }
-
 .geolokasia span {
 	position: absolute;
 	left: -73px;
@@ -154,7 +143,6 @@ body {
 	width: 50px;
 	position: absolute;
 }
-
 .dressCode h5 {
 	position: absolute;
 	top: 70px;
@@ -166,21 +154,17 @@ body {
 	top: 120px;
 	font-weight: 400;
 	font-size: 24px;
-}
-/* - */
-
+} /* - */
 .star13 {
 	position: absolute;
 	top: 3160px;
 	left: 85px;
 }
-
 .star221 img {
 	width: 25px;
 	position: absolute;
 	left: 220px;
 }
-
 .star331 img {
 	width: 25px;
 	position: absolute;
@@ -190,11 +174,7 @@ body {
 	width: 25px;
 	position: absolute;
 	left: 280px;
-}
-
-/* --------- */
-
-/* ======= ЛЕГКАЯ АНИМАЦИЯ ======= */
+} /* --------- */ /* ======= ЛЕГКАЯ АНИМАЦИЯ ======= */
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -205,7 +185,6 @@ body {
 		transform: translateY(0);
 	}
 }
-
 @keyframes floatStars {
 	0% {
 		transform: translateY(0) rotate(0deg);
@@ -217,14 +196,12 @@ body {
 		transform: translateY(0) rotate(0deg);
 	}
 }
-
 .bir h1,
 .bir p,
 .pozdrav h1,
 .pozdrav p {
 	animation: fadeInUp 1.2s ease-in-out;
 }
-
 .star1 img,
 .star2 img,
 .star3 img,
@@ -235,9 +212,7 @@ body {
 .star331 img,
 .star441 img {
 	animation: floatStars 3s infinite ease-in-out;
-}
-
-/* ======= ДЕКОРАТИВНЫЙ ЭФФЕКТ НА ТЕКСТ ======= */
+} /* ======= ДЕКОРАТИВНЫЙ ЭФФЕКТ НА ТЕКСТ ======= */
 .bir h1 {
 	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
 }
@@ -247,30 +222,24 @@ body {
 }
 .pozdrav p {
 	line-height: 1.6;
-}
-
-/* ======= МЯГКИЕ ПЕРЕХОДЫ ДЛЯ КАРТИНОК ======= */
+} /* ======= МЯГКИЕ ПЕРЕХОДЫ ДЛЯ КАРТИНОК ======= */
 img {
 	transition: transform 0.4s ease, filter 0.4s ease;
 }
 img:hover {
 	transform: scale(1.03);
 	filter: brightness(1.05);
-}
-
-/* ======= АДАПТИВ ДЛЯ iPHONE 13 PRO MAX И ДРУГИХ ======= */
+} /* ======= АДАПТИВ ДЛЯ iPHONE 13 PRO MAX И ДРУГИХ ======= */
 @media (max-width: 430px) {
 	body {
 		overflow-x: hidden;
 		background-color: bisque;
 	}
-
 	.container {
 		width: 100%;
 		height: auto;
 		padding: 20px 0 50px 0;
 	}
-
 	.bir h1 {
 		font-size: 40px;
 		left: 0;
@@ -278,7 +247,6 @@ img:hover {
 		text-align: center;
 		width: 100%;
 	}
-
 	.bir p {
 		left: 0;
 		top: 120px;
@@ -288,14 +256,12 @@ img:hover {
 		font-weight: 600;
 		font-size: 18px;
 	}
-
 	.imglar img {
 		position: relative;
 		top: 0;
 		width: 100%;
 		border-radius: 10px;
 	}
-
 	.pozdrav h1 {
 		position: relative;
 		left: 0;
@@ -304,7 +270,6 @@ img:hover {
 		text-align: center;
 		margin-top: 40px;
 	}
-
 	.pozdrav p {
 		position: relative;
 		top: 30px;
@@ -314,7 +279,6 @@ img:hover {
 		padding: 0 20px;
 		text-align: center;
 	}
-
 	.star11,
 	.star12,
 	.star13 {
@@ -326,7 +290,6 @@ img:hover {
 		gap: 15px;
 		margin-top: 40px;
 	}
-
 	.kalendar img {
 		position: relative;
 		top: 0;
@@ -336,37 +299,22 @@ img:hover {
 		margin: 30px auto;
 		border-radius: 10px;
 	}
-
-	/* ===== Блок ВРЕМЯ / МЕСТО / ДРЕСС-КОД ===== */
 	.saat,
 	.geolokasia,
 	.dressCode {
 		position: relative;
-		margin: 30px auto;
+		left: 0;
+		top: 0;
+		margin-top: 40px;
 		text-align: center;
-		display: flex;
-		flex-direction: column; /* вертикально */
-		align-items: center;
-		gap: 10px; /* расстояние между элементами */
 	}
-
 	.saat img,
 	.geolokasia img,
 	.dressCode img {
 		position: relative;
 		width: 60px;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
-
-	.saat h5,
-	.geolokasia h5,
-	.dressCode h5 {
-		position: relative;
-		margin: 0;
-		font-size: 18px;
-		font-weight: 600;
-	}
-
 	.saat h2,
 	.geolokasia span,
 	.dressCode span {
@@ -376,12 +324,26 @@ img:hover {
 		font-size: 22px;
 		font-weight: 500;
 		display: block;
+		margin-top: 10px;
+	}
+	.geolokasia span {
 		white-space: normal;
 	}
-
 	.dressCode {
 		margin-bottom: 60px;
 	}
+} /* */ /* ======= НЕЖНОЕ СИЯНИЕ ЗАГОЛОВКА ======= */
+@keyframes glowText {
+	0% {
+		text-shadow: 0 0 5px #ff8ad6, 0 0 10px #ff8ad6, 0 0 20px #ff8ad6;
+	}
+	50% {
+		text-shadow: 0 0 10px #ff59c2, 0 0 25px #ff59c2, 0 0 40px #ff59c2;
+	}
+	100% {
+		text-shadow: 0 0 5px #ff8ad6, 0 0 10px #ff8ad6, 0 0 20px #ff8ad6;
+	}
 }
-
-
+.bir h1 {
+	animation: glowText 2.5s ease-in-out infinite alternate;
+}
